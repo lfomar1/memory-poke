@@ -1,0 +1,29 @@
+@font-face {
+  font-family: pokeFont;
+  src: url("/src/assets/Pokemon\ Solid.ttf");
+}
+.new-game-modal {
+  padding: 20px;
+  border-radius: 10px;
+  font-family: "pokeFont";
+  font-size: 20px;
+  border: 1px solid white;
+  letter-spacing: 1.5px;
+}
+.new-game-title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+.buttons {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+button {
+  letter-spacing: 1.5px;
+}
+img {
+  width: 30px;
+}
