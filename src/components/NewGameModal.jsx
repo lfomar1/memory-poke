@@ -4,7 +4,10 @@ const NewGameModal = ({ easyMode, mediumMode, hardMode }) => {
     <div className="new-game-modal">
       <div className="new-game-title">
         Welcome to the Poke Game
-        <img src="/src/assets/pokebola.png" alt="pokebola" />
+        <img
+          src="https://www.svgrepo.com/show/276264/pokeball-pokemon.svg"
+          alt="pokebola"
+        />
       </div>
       <div>Select Difficulty : </div>
       <div className="buttons">
