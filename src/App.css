@@ -7,7 +7,9 @@
 .game-board {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   list-style: none;
+  padding: 0;
   gap: 20px;
 }
 .cards {
@@ -17,7 +19,8 @@
 }
 .cards img {
   text-align: center;
-  height: 150px;
+  height: 200px;
+  width: 200px;
 }
 .pokemon-name {
   text-transform: capitalize;

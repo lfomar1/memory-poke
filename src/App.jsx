@@ -99,23 +99,26 @@ function App() {
           )}
 
           {!isGameOver && (
-            <ul className="game-board">
-              {loading && <p>loading...</p>}
-              {shuffledData.map((pokemon) => (
-                <li key={pokemon.url} className="cards">
-                  <img
-                    src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${getPokemonIdFromUrl(
-                      pokemon.url
-                    )}.png`}
-                    alt={pokemon.name}
-                    onClick={() => {
-                      imgHandler(pokemon.url);
-                    }}
-                  />
-                  <div className="pokemon-name">{pokemon.name}</div>
-                </li>
-              ))}
-            </ul>
+            <div>
+              <h1 className="poke-game-title">The Poke Game</h1>
+              <ul className="game-board">
+                {loading && <p>loading...</p>}
+                {shuffledData.map((pokemon) => (
+                  <li key={pokemon.url} className="cards">
+                    <img
+                      src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${getPokemonIdFromUrl(
+                        pokemon.url
+                      )}.png`}
+                      alt={pokemon.name}
+                      onClick={() => {
+                        imgHandler(pokemon.url);
+                      }}
+                    />
+                    <div className="pokemon-name">{pokemon.name}</div>
+                  </li>
+                ))}
+              </ul>
+            </div>
           )}
         </div>
       )}

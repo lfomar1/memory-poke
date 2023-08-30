@@ -1,11 +1,15 @@
-import "./newGameModal.css";
+import "./gameOverModal.css";
 const GameOverModal = ({ score, restart, highScore, quit }) => {
   return (
-    <div className="gameover-modal">
-      <h1>Game Over your score is {score}</h1>
-      <button onClick={restart}>Restart the game</button>
-      <button onClick={quit}>Quit Game</button>
-      <h1>Your record is {highScore}</h1>
+    <div>
+      <div className="gameover-modal">
+        <div className="score">Score is {score} 🔥</div>
+        <div className="record">Record is {highScore} 🏆</div>
+        <div className="game-over-buttons">
+          <button onClick={restart}>Restart</button>
+          <button onClick={quit}>Quit</button>
+        </div>
+      </div>
     </div>
   );
 };

@@ -2,10 +2,9 @@
   font-family: pokeFont;
   src: url("/src/assets/pokemon-font.ttf");
 }
-.new-game-modal {
+.gameover-modal {
   font-family: "pokeFont";
   font-size: 25px;
-  font-weight: 900;
   --angle: 0deg;
   padding: 20px;
   border: 10px solid;
@@ -35,20 +34,18 @@
   initial-value: 0deg;
   inherits: false;
 }
-.new-game-title {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  margin-bottom: 20px;
-}
-.buttons {
+
+.game-over-buttons {
   display: flex;
   gap: 10px;
-  margin-top: 20px;
+  margin-top: 10px;
 }
 button {
   letter-spacing: 1.5px;
 }
-img {
-  width: 30px;
+.score {
+  margin-bottom: 20px;
+}
+.record {
+  margin-bottom: 20px;
 }

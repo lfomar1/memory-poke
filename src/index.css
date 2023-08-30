@@ -1,3 +1,7 @@
+@font-face {
+  font-family: pokeFont;
+  src: url("/src/assets/pokemon-font.ttf");
+}
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -26,7 +30,6 @@ body {
   margin: 0;
   display: flex;
   place-items: center;
-  min-width: 320px;
   min-height: 100vh;
 }
 
@@ -53,7 +56,9 @@ button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
-
+.poke-game-title {
+  font-family: "pokeFont";
+}
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
